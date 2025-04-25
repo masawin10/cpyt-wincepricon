@@ -28,6 +28,8 @@ jobs:
       run: |
         wget https://github.com/brain-hackers/cegcc-build/releases/download/2022-10-26-225811/cegcc-x86_64-2022-10-26-225811.zip -O cegcc.zip
         unzip cegcc.zip -d /opt 
+        sudo apt-get -y install libtool
+        sudo apt-get -y install libltdl-dev
 
     - name: Download Tcl/Tk
       run: wget https://master.dl.sourceforge.net/project/tcltkce/tcltkce/8.4.6/tcltk846ce-arm.zip?viasf=1 -O tcltk.zip
